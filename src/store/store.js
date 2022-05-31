@@ -1,6 +1,5 @@
 import rootReducer from '../reducer/index'
-import { createStore, applyMiddleware } from 'redux'
-import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
 const store = createStore(
   rootReducer,

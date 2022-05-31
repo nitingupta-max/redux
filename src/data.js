@@ -1,5 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux'
-import { storeEven } from '../src/action/index'
+import { useSelector } from 'react-redux'
 
 const Data = () => {
   const myState = useSelector((state) => state.check)

@@ -1,7 +1,7 @@
 import "./App.css";
 import axios from "axios";
 import Data from "./data";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { storeEven } from "../src/action/index";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
         className="btn"
         onClick={() => {
           callApi();
-          if (number % 2 == 0) dispatch(storeEven(res));
+          if (number % 2 === 0) dispatch(storeEven(res));
         }}
       >
         Refresh
